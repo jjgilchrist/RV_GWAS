@@ -90,7 +90,7 @@ ggsave(
   dpi = 300
 )
 
-#compile observed and expected (null sumamry statistics)
+#compile observed and expected (null summary statistics)
 
 df <- data.frame(observed = -log10(sort(na.omit(disc.add$p))),
     expected = -log10(ppoints(length(na.omit(disc.add$p)))))
