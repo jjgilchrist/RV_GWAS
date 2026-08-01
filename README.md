@@ -9,6 +9,6 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
 
 **Overview of repository**
 * Rotavirus disease & immunity genome-wide association analysis:
-  1. Scripts used to perform association for GWAS of anti-RV immunity in Uganda and RV disease risk in Kenya (RV_GWAS.sh).
+  1. Scripts used to perform association for GWAS of anti-RV immunity in Uganda and RV disease risk in Kenya (RV_GWAS.sh). Association analysis was performed using SNPTEST v2.5.6: [Marchini J, *et al*. "A new multipoint method for genome-wide association studies by imputation of genotypes." *Nature Genetics.* 2009.](https://doi.org/10.1038/ng2088)
   2. Scripts to plot manhattan and QQ plots for GWAS of anti-RV immunity in Uganda (uganda_GWAS_manhs_qq.R) and RV disease risk in Kenya (kenya_GWAS_manhs_qq.R) from thinned summary statistics (uganda_GWAS_summ_stats.thinned.txt.gz & kenya_GWAS_summ_stats.thinned.txt.gz).
-  Association analysis was performed using SNPTEST v2.5.6: [Marchini J, *et al*. "A new multipoint method for genome-wide association studies by imputation of genotypes." *Nature Genetics.* 2009.](https://doi.org/10.1038/ng2088) 
+  
