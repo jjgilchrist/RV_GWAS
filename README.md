@@ -13,4 +13,7 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
   2. Scripts to plot manhattan and QQ plots for GWAS of anti-RV immunity in Uganda (uganda_GWAS_manhs_qq.R) and RV disease risk in Kenya (kenya_GWAS_manhs_qq.R) from thinned summary statistics (uganda_GWAS_summ_stats.thinned.txt.gz & kenya_GWAS_summ_stats.thinned.txt.gz).
   3. Script to plot regional association plot for secretor region (secretor_RA_plot.R) using Uganda and Kenya GWAS summary statistics (secretor_RA.ld.txt), local gene coordinates (secretor_genes.txt) and local recombination rate (genetic_map_chr19_b37.txt).
   4. Script to plot regional association plot for associated chromosome 2 region (chr2_locus_RA_plot.R) using Uganda GWAS summary statistics (chr2_RA.ld.txt), local gene coordinates (chr2_genes.txt) and local recombination rate (genetic_map_chr2_b37.txt).
+ 
+* Secretor status, ABO & Lewis:
+  1. Script (secretor_lewis_ABO.R) and data (kenya_abo_sec_lew.txt; uganda_sec_lew.txt) to reproduce analysis exploring the association between secretor status, Lewis antigen status, ABO blood group and rotavirus disease risk and immunity.
   
