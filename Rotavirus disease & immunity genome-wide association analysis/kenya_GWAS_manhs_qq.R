@@ -10,7 +10,7 @@ library(ggrepel)
 #full summary statistics will be deposited with the GWAS Catalog (https://www.ebi.ac.uk/gwas/)
 
 disc.add <- read.table("kenya_GWAS_summ_stats.thinned.txt.gz", header = T)
-
+disc.add <- na.omit(disc.add)
 str(disc.add)
 disc.add$chr <- factor(disc.add$chr, levels = c(1:22))
 levels(disc.add$chr) <- c(1:22)
