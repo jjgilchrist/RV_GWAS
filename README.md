@@ -16,4 +16,6 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
  
 * Secretor status, ABO & Lewis:
   1. Script (secretor_lewis_ABO.R) and data (kenya_abo_sec_lew.txt; uganda_sec_lew.txt) to reproduce analysis exploring the association between secretor status, Lewis antigen status, ABO blood group and rotavirus disease risk and immunity.
-  
+
+  * Effect of chromosome 2 locus on RV immunity & disease:
+  1. Script (secretor_lewis_ABO.R) and data (kenya_abo_sec_lew.txt; uganda_sec_lew.txt) to reproduce analysis exploring the association between the novel chromosome 2 locus and rotavirus disease risk, all-cause diarrhoeal disease risk and immunity.
