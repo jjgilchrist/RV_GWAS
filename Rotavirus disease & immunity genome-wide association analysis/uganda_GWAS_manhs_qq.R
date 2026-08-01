@@ -6,7 +6,7 @@ library(dplyr)
 library(ggrepel)
 
 #read in summary statistics: GWAS of anti-RV IgA levels in 2 and 3 year olds in Uganda
-#summary statistics are randomly thinned (~1 in 10) with the exception of chromosomes and 19
+#summary statistics are randomly thinned (~1 in 10) with the exception of associated loci on chromosomes 2 and 19
 #full summary statistics will be deposited with the GWAS Catalog (https://www.ebi.ac.uk/gwas/)
 
 disc.add <- read.table("uganda_GWAS_summ_stats.thinned.txt.gz", header = T)
