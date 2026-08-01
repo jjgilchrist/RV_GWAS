@@ -19,3 +19,7 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
 
 * Effect of chromosome 2 locus on RV immunity & disease:
   1. Script (chr_2_locus_rep.R) and data (uganda_diarrhoea.txt; zambia_chr2_locus.txt; kenya_RV_disease_chr2.txt; uganda_IgA_chr2.txt) to reproduce analysis exploring the association between the novel chromosome 2 locus and rotavirus disease risk, all-cause diarrhoeal disease risk and immunity.
+ 
+* Regulatory function of RV-associated chromosome 2 locus:
+  1. Script (LIMS1_eQTL_colocalisation.R) and data (coloc_eqtl_summ_stats.txt) to reproduce colocalisation analysis effect of the RV-associated chromosome 2 locus on gene expression in immune cells.
+  2. 
