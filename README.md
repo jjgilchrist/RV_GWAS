@@ -18,8 +18,8 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
   1. Script (secretor_lewis_ABO.R) and data (kenya_abo_sec_lew.txt; uganda_sec_lew.txt) to reproduce analysis exploring the association between secretor status, Lewis antigen status, ABO blood group and rotavirus disease risk and immunity.
 
 * Effect of chromosome 2 locus on RV immunity & disease:
-  1. Script (chr_2_locus_rep.R) and data (uganda_diarrhoea.txt; zambia_chr2_locus.txt; kenya_RV_disease_chr2.txt; uganda_IgA_chr2.txt) to reproduce analysis exploring the association between the novel chromosome 2 locus and rotavirus disease risk, all-cause diarrhoeal disease risk and immunity. Colocalisation analysis was performed using Coloc v5.0.1: [Giambartolomei C, *et al*. "Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics." *PLoS Genetics.* 2014.](https://doi.org/10.1371/journal.pgen.1004383]
+  1. Script (chr_2_locus_rep.R) and data (uganda_diarrhoea.txt; zambia_chr2_locus.txt; kenya_RV_disease_chr2.txt; uganda_IgA_chr2.txt) to reproduce analysis exploring the association between the novel chromosome 2 locus and rotavirus disease risk, all-cause diarrhoeal disease risk and immunity.
  
 * Regulatory function of RV-associated chromosome 2 locus:
-  1. Script (LIMS1_eQTL_colocalisation.R) and data (coloc_eqtl_summ_stats.txt) to reproduce colocalisation analysis effect of the RV-associated chromosome 2 locus on gene expression in immune cells.
+  1. Script (LIMS1_eQTL_colocalisation.R) and data (coloc_eqtl_summ_stats.txt) to reproduce colocalisation analysis effect of the RV-associated chromosome 2 locus on gene expression in immune cells. Colocalisation analysis was performed using Coloc v5.0.1: [Giambartolomei C, *et al*. "Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics." *PLoS Genetics.* 2014.](https://doi.org/10.1371/journal.pgen.1004383]
   2. 
