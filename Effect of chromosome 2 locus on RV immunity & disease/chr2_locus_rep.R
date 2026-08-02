@@ -9,12 +9,14 @@ library(patchwork)
 cols <- brewer.pal(8,"Set2")
 cols2 <- brewer.pal(10,"Paired")
 
+#n.b. individual levels datasets used here are synthetic. They are provided to illustrate the work-flow and will not reproduce the study's results. Individual level genotype and phenotype data will be made available through the European Genome-phenome Archive.
+
 #read in novel locus genotype (rs59241810) and phenotype (IgA) data (Uganda)
 #pc1-2: genotype principal components
 #age: age at serum sampling (2 or 3 years)
 #rsid.2.109558305.C.T.add: rs59241810 genotype (additive)
 #norm.iga: inverse normal transformed serum anti-RV IgA levels
-ug.d <- read.table("uganda_IgA_chr2.txt", header = T)
+ug.d <- read.table("uganda_IgA_chr2_synth.txt", header = T)
 
 #Genotype at rs59241810 is associated with anti-RV IgA at 2/3 years in Ugandan children
 summary(lm(norm.iga~rsid.2.109558305.C.T.add+pc1+pc2+sex+age, data = ug.d))
@@ -39,7 +41,7 @@ box.novel
 #feeding: infant feeding
 #intervention: randomisation to additional vaccine dose
 #norm.IgA: normalised serum anti-RV IgA at 12 months of age
-zam.d <- read.table("zambia_chr2_locus.txt", header = T)
+zam.d <- read.table("zambia_chr2_locus_synth.txt", header = T)
 
 #test for effect of rs59241810 and secretor status on anti-RV IgA levels in Zambia infants
 summary(lm(norm.IgA~chr_2_locus+secretor+feeding+sex+intervention, data = zam.d))
@@ -66,7 +68,7 @@ box.chr2.zambia
 #rsid.2.109558305.C.T.add: rs59241810 genotype (additive)
 #age_cat: categorical variable - cases are grouped into "over" (age over 12 months at hospitalisation) and "under" (age under 12 months at hospitalisation)
 
-ken.d <- read.table("kenya_RV_disease_chr2.txt", header = T)
+ken.d <- read.table("kenya_RV_disease_chr2_synth.txt", header = T)
 
 #no association between rs59241810 genotype and overall RV disease risk in Kenyan children
 novel.ken.total <- glm(cc~rsid.2.109558305.C.T.add+sex+pc1+pc2+pc3+pc4, data = ken.d, family = "binomial")
@@ -175,7 +177,7 @@ novel.geno.age.fp
 #bin.dia.dehydr: ever had diarrhoea with dehydration
 #bin.dia.dehydr: ever had diarrhoea with dysentery
 #bin.dia.dehydr: ever had prolonged diarrhoea
-ug2.d <- read.table("uganda_diarrhoea.txt", header = T)
+ug2.d <- read.table("uganda_diarrhoea_synth.txt", header = T)
 
 
 #is genotype at rs59241810 associated with all-cause diarrhoea?
