@@ -9,6 +9,8 @@ library(patchwork)
 cols <- brewer.pal(8,"Set2")
 cols2 <- brewer.pal(10,"Paired")
 
+#n.b. individual levels datasets used here are synthetic. They are provided to illustrate the work-flow and will not reproduce the study's results. Individual level genotype and phenotype data will be made available through the European Genome-phenome Archive.
+
 #read in secretor, lewis, ABO and phenotype data (Kenya) 
 #pc1-4: genotype principal components
 #cc: case-control status (1 = admission with RV diarrhoea)
@@ -17,7 +19,7 @@ cols2 <- brewer.pal(10,"Paired")
 #bld_grp: ABO blood group
 #O_nonO: O vs nonO (A, B, AB) blood group
 #lewis_neg: Lewis antigen status (1 = Lewis negative)
-ken.d <- read.table("kenya_abo_sec_lew.txt", header = T)
+ken.d <- read.table("kenya_abo_sec_lew_synth.txt", header = T)
 
 #secretor status is associated with overall risk of hospital admission with rotavirus diarrhoea
 sec.ken.total <- glm(cc~rsid.19.49206674.G.A.rec+sex+pc1+pc2+pc3+pc4, data = ken.d, family = "binomial")
@@ -285,7 +287,7 @@ lewis_sec_geno_int.fp
 #rsid.19.49206674.G.A.rec: secretor status (1 = non-secretors)
 #lewis_neg: Lewis antigen status (1 = Lewis negative)
 #norm.iga: inverse normal transformed serum anti-RV IgA levels
-ug.d <- read.table("uganda_sec_lew.txt", header = T)
+ug.d <- read.table("uganda_sec_lew_synth.txt", header = T)
 
 #overall there is no effect of Lewis antigen status on anti-RV IgA responses in children
 lm1 <- lm(norm.iga~lewis_neg+sex+age+pc1+pc2, data = ug.d)
