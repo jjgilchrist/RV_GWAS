@@ -7,12 +7,14 @@ library(RColorBrewer)
 #set colour palette
 cols <- brewer.pal(8,"Set2")
 
+#n.b. individual levels datasets used here are synthetic. They are provided to illustrate the work-flow and will not reproduce the study's results. Individual level genotype and phenotype data will be made available through the European Genome-phenome Archive.
+
 #read in data
 #IFN_[cytokine]: [cytokine] secretion (normalised) from monocytes following 24 hours of IFN-gamma stimulation
 #geno: rs59241810 genotype (additive)
 #LIMS1.ifn: LIMS1 RNA expression (normalised) in monocytes following 24 hours of IFN-gamma stimulation
 #RNA.pc1-pc25: first 25 principal components of gene expression data in monocytes following 24 hours of IFN-gamma stimulation
-cytokine_RNA_LIMS1 <- read.table("~/Documents/rotavirus/RV_CIDRZ_project/github_rep/function/IFN_monocytes_cytokine.txt", header = T)
+cytokine_RNA_LIMS1 <- read.table("IFN_monocytes_cytokine_synth.txt", header = T)
 
 #calculate correlation between LIMS1 RNA expression and secretion of 28 cytokines from monocytes following 24 hours of IFN-gamma stimulation 
 p.ifn<- c()
