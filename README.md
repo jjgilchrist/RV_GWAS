@@ -22,7 +22,7 @@ Rotavirus (RV) is a major cause of diarrhoeal disease and mortality in African c
  
 * Regulatory function of RV-associated chromosome 2 locus:
   1. Script (LIMS1_eQTL_colocalisation.R) and data (coloc_eqtl_summ_stats.txt) to reproduce colocalisation analysis effect of the RV-associated chromosome 2 locus on gene expression in immune cells. Colocalisation analysis was performed using Coloc v5.0.1: [Giambartolomei C, *et al*. "Bayesian Test for Colocalisation between Pairs of Genetic Association Studies Using Summary Statistics." *PLoS Genetics.* 2014.](https://doi.org/10.1371/journal.pgen.1004383)
-  2. Script (LIMS1_cytokine_correlation.R) and data (IFN_monocytes_cytokine_synth.txt) to illustrate correlation between LIMS1 expression and secretion of HGF from stimulated (IFN-gamma 24 hours) monocytes.
+  2. Script (LIMS1_cytokine_correlation.R) and data (IFN_monocytes_cytokine_synth.txt) to illustrate analysis exploring correlation between LIMS1 expression and secretion of HGF from stimulated (IFN-gamma 24 hours) monocytes.
  
 **Data availability and sources**
 Complete GWAS summary statistics will be made available through the NHGRI-EBI GWAS Catalog (https://www.ebi.ac.uk/gwas/downloads/summary-statistics). Individual level genotype and phenotype data will be deposited with the European Genome-Phenome Archive.
